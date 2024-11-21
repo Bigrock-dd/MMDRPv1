@@ -1,4 +1,4 @@
-# scripts/split_dataset.py
+
 
 import argparse
 import pandas as pd
