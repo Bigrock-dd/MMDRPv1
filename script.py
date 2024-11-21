@@ -13,8 +13,8 @@ import warnings
 import os
 from pathlib import Path
 
+
 class GAT(torch.nn.Module):
-    """Graph Attention Network for molecular feature extraction"""
     
     def __init__(self, num_node_features, hidden_channels, max_atoms=1000, num_heads=8):
         super(GAT, self).__init__()
@@ -174,13 +174,13 @@ def get_atom_features(atom):
     features.extend(atom_type)
     
     features.extend([
-        atom.GetDegree(),          # 度
-        atom.GetTotalNumHs(),      # 氢原子数
-        atom.GetFormalCharge(),    # 形式电荷
-        atom.GetIsAromatic() * 1,  # 芳香性
-        atom.GetAtomicNum(),       # 原子序数
-        atom.GetMass(),            # 原子质量 (新增)
-        atom.GetExplicitValence(), # 显式化合价 (新增)
+        atom.GetDegree(),          
+        atom.GetTotalNumHs(),      
+        atom.GetFormalCharge(),    
+        atom.GetIsAromatic() * 1,  
+        atom.GetAtomicNum(),       
+        atom.GetMass(),            
+        atom.GetExplicitValence(), 
     ])
     
     hyb_types = [
