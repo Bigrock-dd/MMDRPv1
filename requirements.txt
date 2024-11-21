@@ -1,0 +1,9 @@
+tensorflow>=2.5.0
+torch>=1.9.0
+torch-geometric
+rdkit
+mdtraj
+numpy
+pandas
+scikit-learn
+scipy
