@@ -47,3 +47,12 @@ python scripts/train_model.py \
     -batch 32 \
     -epochs 1000
 ```
+## 4. Predicting the affinity of a protein-ligand complex
+We provide the "predict.py" script in the "scoring" directory, you can score protein-ligand complexes using the following command:
+```
+python scripts/predict.py \
+    --model ... \
+    --input features.csv \
+    --output predictions.csv
+```
+Note that you should first train the model or download our trained model (it will be uploaded on a cloud drive) and save it to the appropriate path.
