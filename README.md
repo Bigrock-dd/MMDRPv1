@@ -1,13 +1,12 @@
 # MMDRPv1
  
 MM-DRPNet is a state-of-the-art deep learning framework for predicting protein-ligand binding affinity. By integrating multimodal features, including Dynamic Radial Partitioning (DRP) and Graph Attention Network (GAT), this model captures intricate spatial interactions and topological features, significantly improving prediction accuracy across benchmarks.
-
+![](./src/models/AbGraphical.png)
 # Key Features
 
-	•	Dynamic Radial Partitioning (DRP): Dynamically segments the 3D protein-ligand interaction space for detailed spatial feature extraction.
-	•	Graph Attention Network (GAT): Captures molecular topological features to enhance the model’s contextual understanding of molecular interactions.
-	•	Multimodal Framework: Fuses structural data, interaction features, and physicochemical properties for comprehensive binding affinity modeling.
-	•	Superior Performance: Outperforms traditional and deep learning methods like DeepDTA, OnionNet, and AutoDock Vina in multiple benchmarks.
+	• Dynamic Radial Partitioning (DRP): Dynamically segments the 3D protein-ligand interaction space for detailed spatial feature extraction.
+	• Graph Attention Network (GAT): Captures molecular topological features to enhance the model’s contextual understanding of molecular interactions.
+	• Multimodal Framework: Fuses structural data, interaction features, and physicochemical properties for comprehensive binding affinity modeling.
 
 # Installation
 
